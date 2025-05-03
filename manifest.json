@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "homepage_url": "https://github.com/jimmy-zhening-luo/bookmark",
   "action": {
-    "default_popup": "index.html",
     "default_icon": {
       "16": "static/icons/icon-16.png",
       "32": "static/icons/icon-32.png",
