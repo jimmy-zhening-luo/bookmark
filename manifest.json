@@ -16,6 +16,9 @@
   "background": {
     "service_worker": "dist/background.js"
   },
+  "permissions": [
+    "activeTab"
+  ],
   "incognito": "spanning",
   "manifest_version": 3,
   "icons": {
