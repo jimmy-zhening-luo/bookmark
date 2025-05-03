@@ -3,14 +3,6 @@
   "short_name": "Bookmark",
   "version": "0.0.1",
   "homepage_url": "https://github.com/jimmy-zhening-luo/bookmark",
-  "incognito": "spanning",
-  "icons": {
-    "16": "static/icons/icon-16.png",
-    "32": "static/icons/icon-32.png",
-    "48": "static/icons/icon-48.png",
-    "128": "static/icons/icon-128.png",
-    "192": "static/icons/icon.png"
-  },
   "action": {
     "default_popup": "index.html",
     "default_icon": {
@@ -24,7 +16,15 @@
   "background": {
     "service_worker": "dist/background.js"
   },
+  "incognito": "spanning",
   "manifest_version": 3,
+  "icons": {
+    "16": "static/icons/icon-16.png",
+    "32": "static/icons/icon-32.png",
+    "48": "static/icons/icon-48.png",
+    "128": "static/icons/icon-128.png",
+    "192": "static/icons/icon.png"
+  },
   "description": "Chrome extension to canonicalize and bookmark URLs to multiple repositories (e.g. Raindrop, Reddit save, GitHub star) depending on hostname.",
   "author": "jimmy-zhening-luo@users.noreply.github.com"
 }
