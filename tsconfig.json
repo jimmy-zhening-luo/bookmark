@@ -55,6 +55,7 @@
       "mocha",
       "chai",
       /* {CONFIGURE} */
+      "chrome" /* @OVERRIDE */,
     ],
     // #endregion
     //
