@@ -15,6 +15,9 @@
     "default_popup": "index.html",
     "default_icon": "static/icons/icon.png"
   },
+  "background": {
+    "service_worker": "dist/background.js"
+  },
   "manifest_version": 3,
   "description": "Chrome extension to canonicalize and bookmark URLs to multiple repositories (e.g. Raindrop, Reddit save, GitHub star) depending on hostname.",
   "author": "jimmy-zhening-luo@users.noreply.github.com"
