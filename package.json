@@ -2,9 +2,9 @@
   "$pkg": "2215.0.0",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
-  "name": "packagename",
+  "name": "@scoping/bookmark",
   "version": "0.0.0",
-  "repository": "github:jimmy-zhening-luo/REPO",
+  "repository": "github:jimmy-zhening-luo/bookmark",
   "private": true,
   "engineStrict": true,
   "engines": {
@@ -83,7 +83,13 @@
     "tag": "next"
   },
   "license": "MIT",
-  "description": "",
-  "keywords": [],
+  "description": "Chrome extension to canonicalize and bookmark URLs to multiple repositories (e.g. Raindrop, Reddit save, GitHub star) depending on hostname.",
+  "keywords": [
+    "bookmarks",
+    "chrome-extension",
+    "github",
+    "raindrop",
+    "reddit"
+  ],
   "author": "Jimmy Zhening Luo <jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
