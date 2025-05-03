@@ -114,6 +114,7 @@
     "lib": [
       "es2023",
       /* {CONFIGURE} */
+      "DOM" /* @OVERRIDE */,
     ],
     // "libReplacement": true /* @default: true | INFO: in the future, @default may become false */,
     // "moduleDetection": "auto",
