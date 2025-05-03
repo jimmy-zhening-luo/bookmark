@@ -1,10 +1,10 @@
 {
   "name": "Bookmark",
   "description": "Chrome extension to canonicalize and bookmark URLs to multiple repositories (e.g. Raindrop, Reddit save, GitHub star) depending on hostname.",
-  "version": "1.0",
+  "version": "0.0.1",
   "manifest_version": 3,
   "action": {
     "default_popup": "index.html",
-    "default_icon": "static/icon.png"
+    "default_icon": "static/icons/icon.png"
   }
 }
