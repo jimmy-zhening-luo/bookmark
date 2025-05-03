@@ -13,7 +13,13 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_icon": "static/icons/icon.png"
+    "default_icon": {
+      "16": "static/icons/icon-16.png",
+      "32": "static/icons/icon-32.png",
+      "48": "static/icons/icon-48.png",
+      "128": "static/icons/icon-128.png",
+      "192": "static/icons/icon.png"
+    }
   },
   "background": {
     "service_worker": "dist/background.js"
