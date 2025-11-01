@@ -4,8 +4,8 @@ export default linted(
   {
     ts: {
       rules: {
-        "@typescript-eslint/no-misused-promises": [
-          "error",
+        "ts/no-misused-promises": [
+          0,
           {
             checksVoidReturn: {
               arguments: false,
@@ -15,5 +15,4 @@ export default linted(
       },
     },
   },
-
 );

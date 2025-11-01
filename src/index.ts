@@ -16,7 +16,7 @@ chrome
         { tabId: tab.id },
       )
       .catch(
-        (e: unknown) => console.error(e),
+        (e: unknown) => { console.error(e); },
       );
 
     await chrome
@@ -25,5 +25,7 @@ chrome
         tabId: tab.id,
         text: prevState === "ON" ? "OFF" : "ON",
       })
-      .catch((e: unknown) => console.error(e));
+      .catch(
+        (e: unknown) => { console.error(e); },
+      );
   });

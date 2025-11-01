@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig-base.json",
+  "include": [
+    "../typings/**/*",
+    "**/*",
+  ],
+  "references": [
+    {
+      "path": "../src",
+    },
+    {
+      "path": "../typings",
+    },
+  ],
+  "compilerOptions": {
+    "outDir": "../dist/tests",
+  },
+}
