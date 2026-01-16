@@ -1,5 +1,5 @@
 {
-  "$pkg": "2411.6.1",
+  "$pkg": "2412.0.0",
   "$schema": "https://json.schemastore.org/package",
   "$help": "https://docs.npmjs.com/cli/configuring-npm/package-json",
   "name": "@scoping/bookmark",
@@ -21,22 +21,28 @@
     "npm": "^11"
   },
   "type": "module",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "peerDependenciesMeta": {},
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^5.2.3",
-    "@types/chrome": "^0.1.27",
+    "@types/chrome": "^0.1.33",
     "@types/mocha": "^10.0.10",
-    "chai": "^6.2.0",
-    "linted": "33.4.7",
-    "mocha": "^11.7.4",
+    "chai": "^6.2.2",
+    "linted": "37.4.0",
+    "mocha": "^11.7.5",
     "ts-add-js-extension": "^1.6.6",
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "clean": "cmd --% /c \"for %G in (types dist build packed) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .eslintcache",
+    "clean": "cmd --% /c \"for %G in (types dist build packed .svelte-kit) do (if exist %G rmdir /s /q %G) & for %G in (.eslintcache) do (if exist %G del /f /q %G)\" || rm -rf types dist build packed .svelte-kit .eslintcache",
     "build": "npm run build:ts",
     "build:ts": "tsc -b src",
     "postbuild:ts": "npm run --if-present stage && ts-add-js-extension --showprogress=false --dir=dist",
@@ -52,5 +58,5 @@
     "stage": "",
     "deploy": ""
   },
-  "author": "Jimmy Zhening Luo <jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
+  "author": "Jimmy Zhening Luo <1450044+jimmy-zhening-luo@users.noreply.github.com> (https://jimm.my/)"
 }
