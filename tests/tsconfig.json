@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig-base.json",
+  "extends": "../tsconfig-base",
   "include": [
     "../typings/**/*",
     "**/*",
@@ -8,14 +8,17 @@
     {
       "path": "../src",
     },
-    {
-      "path": "../typings",
-    },
   ],
   "compilerOptions": {
     "rootDirs": [
-      "../src",
       "..",
+      "../src",
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      /* {CONFIGURE} */
+      "chrome",
     ],
     "outDir": "../dist/tests",
   },
