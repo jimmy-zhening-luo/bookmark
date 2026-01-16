@@ -1,18 +1,9 @@
 import linted from "linted";
 
-export default linted(
-  {
-    ts: {
-      rules: {
-        "ts/no-misused-promises": [
-          0,
-          {
-            checksVoidReturn: {
-              arguments: false,
-            },
-          },
-        ],
-      },
+export default linted({
+  ts: {
+    rules: {
+      "ts/no-misused-promises": 0,
     },
   },
-);
+});
