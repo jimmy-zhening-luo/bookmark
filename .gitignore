@@ -1,6 +1,6 @@
 ##############################
 ####      .gitignore      ####
-####       v251.1.0       ####
+####       v252.1.0       ####
 ##############################
 
 #DOC: https://git-scm.com/docs/gitignore
@@ -35,6 +35,8 @@ node_modules/
 .svelte-kit/
 # Local
 .vscode/**
+!.vscode/**/launch.json
+!.vscode/**/.code-workspace
 !.vscode/**/*.code-snippets
 # Trash
 .Trash/
@@ -54,7 +56,6 @@ node_modules/
 # Trash
 *.DS_Store
 *.icloud
-.blink*
 #endregion
 
 
